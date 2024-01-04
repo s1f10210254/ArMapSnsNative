@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import apiClient from './src/utils/apiClient';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -31,8 +32,19 @@ type SectionProps = PropsWithChildren<{
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const [hiData, setHiData] = useState<string | null>(null);
+  const hi = async () => {
+    console.log('1');
+    const data = await apiClient.hi.$get().catch(null);
+    console.log('2');
+    setHiData(data);
+  };
+  useEffect(() => {
+    hi();
+  }, []);
   return (
     <View style={styles.sectionContainer}>
+      <Text>{hiData}</Text>
       <Text
         style={[
           styles.sectionTitle,
