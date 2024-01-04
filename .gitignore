@@ -1,1 +1,34 @@
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+
+# misc
 .DS_Store
+*.pem
+tsconfig.tsbuildinfo
+*.css.d.ts
+*.css.d.ts.map
+$*.ts
+.env
+
+# debug
+npm-debug.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# docker
+/docker/dev/minio/
+
+# server
+server/index.js
+server/index.js.map
+server/upload/
