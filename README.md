@@ -7,7 +7,6 @@ npm i
 
 環境変数ファイルの作成  
 ```
-$ cp client/.env.example client/.env
 $ cp server/.env.example server/.env
 $ cp docker/dev/.env.example docker/dev/.env
 ```
@@ -16,3 +15,13 @@ $ cp docker/dev/.env.example docker/dev/.env
 ```
 $ docker compose up -d
 ```
+
+開発サーバー起動  
+native側  
+cd ArMapSnsNative  
+```npm start```  
+
+server側  
+cd server  
+```npm run dev```  
+
