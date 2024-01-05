@@ -3,6 +3,7 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 export type RootStackParamList = {
   Home: undefined;
   Other: undefined;
+  User: undefined;
   Minio: undefined;
   Animate: undefined;
   Map: undefined;
@@ -14,4 +15,14 @@ export type RootStackParamList = {
 export type HomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
   'Home'
+>;
+
+export type OtherScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'Other'
+>;
+
+export type FirebaseScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'Firebase'
 >;

@@ -1,9 +1,13 @@
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
+import {OtherScreenNavigationProp} from '../utils/ParamList';
 
-const OtherScreen = () => {
+type Props = {
+  navigation: OtherScreenNavigationProp;
+};
+const OtherScreen = ({navigation}: Props) => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Other Screen</Text>
+      <Button title="Go back to Home" onPress={() => navigation.goBack()} />
     </View>
   );
 };

@@ -12,6 +12,7 @@ const HomeScreen = ({navigation}: Props) => {
         title="Go to Other Screen"
         onPress={() => navigation.navigate('Other')}
       />
+      <Button title="User" onPress={() => navigation.navigate('User')} />
     </View>
   );
 };
