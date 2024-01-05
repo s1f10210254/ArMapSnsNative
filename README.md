@@ -20,6 +20,7 @@ $ docker compose up -d
 *native側*  
 cd ArMapSnsNative  
 ```npm start```  
+
 シミレーターが起動していない状態↓  
 npm run ios  
 or  
