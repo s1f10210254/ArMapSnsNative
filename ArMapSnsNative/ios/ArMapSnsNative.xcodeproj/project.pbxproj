@@ -14,6 +14,8 @@
 		21C419B1D50CE226878A2B26 /* libPods-ArMapSnsNative-ArMapSnsNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7645406B6D900B8A303D1 /* libPods-ArMapSnsNative-ArMapSnsNativeTests.a */; };
 		351471027BED0C6DB44084D4 /* libPods-ArMapSnsNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A5DE61E93018447DB7517B /* libPods-ArMapSnsNative.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F59E10772B494B1400412E82 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E10762B494B1400412E82 /* RCTCalendarModule.m */; };
+		F59E10782B494B1400412E82 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E10762B494B1400412E82 /* RCTCalendarModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		ADBEE3B24258A96E8CE54A0D /* Pods-ArMapSnsNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArMapSnsNative.release.xcconfig"; path = "Target Support Files/Pods-ArMapSnsNative/Pods-ArMapSnsNative.release.xcconfig"; sourceTree = "<group>"; };
 		EADB9097627EB6B8D6786149 /* Pods-ArMapSnsNative-ArMapSnsNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArMapSnsNative-ArMapSnsNativeTests.release.xcconfig"; path = "Target Support Files/Pods-ArMapSnsNative-ArMapSnsNativeTests/Pods-ArMapSnsNative-ArMapSnsNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F59E10752B494A8800412E82 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
+		F59E10762B494B1400412E82 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F59E10732B49489400412E82 /* NativeModule */,
 				13B07FAE1A68108700A75B9A /* ArMapSnsNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ArMapSnsNativeTests */,
@@ -146,6 +151,23 @@
 				EADB9097627EB6B8D6786149 /* Pods-ArMapSnsNative-ArMapSnsNativeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F59E10732B49489400412E82 /* NativeModule */ = {
+			isa = PBXGroup;
+			children = (
+				F59E10742B494A2600412E82 /* example_Calendar */,
+			);
+			path = NativeModule;
+			sourceTree = "<group>";
+		};
+		F59E10742B494A2600412E82 /* example_Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F59E10752B494A8800412E82 /* RCTCalendarModule.h */,
+				F59E10762B494B1400412E82 /* RCTCalendarModule.m */,
+			);
+			path = example_Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ArMapSnsNativeTests.m in Sources */,
+				F59E10782B494B1400412E82 /* RCTCalendarModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59E10772B494B1400412E82 /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

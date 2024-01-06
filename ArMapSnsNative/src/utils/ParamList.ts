@@ -11,6 +11,7 @@ export type RootStackParamList = {
   Prisma: undefined;
   Firebase: undefined;
   Swift: undefined;
+  NativeModule: undefined;
 };
 export type HomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -25,4 +26,9 @@ export type OtherScreenNavigationProp = NativeStackNavigationProp<
 export type FirebaseScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
   'Firebase'
+>;
+
+export type NativeModuleScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'NativeModule'
 >;

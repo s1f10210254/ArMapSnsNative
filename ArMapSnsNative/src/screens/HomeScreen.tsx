@@ -5,6 +5,7 @@ import {HomeScreenNavigationProp, RootStackParamList} from '../utils/ParamList';
 type Props = {
   navigation: HomeScreenNavigationProp;
 };
+
 const HomeScreen = ({navigation}: Props) => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -13,6 +14,10 @@ const HomeScreen = ({navigation}: Props) => {
         onPress={() => navigation.navigate('Other')}
       />
       <Button title="User" onPress={() => navigation.navigate('User')} />
+      <Button
+        title="NativeModule"
+        onPress={() => navigation.navigate('NativeModule')}
+      />
     </View>
   );
 };

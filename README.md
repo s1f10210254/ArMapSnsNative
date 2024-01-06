@@ -9,7 +9,7 @@ npm i
 **環境変数ファイルの作成**
 
 ```
-$ cp client/.env.example client/.env
+$ cp ArMapSnsNative/.env.example client/.env
 $ cp server/.env.example server/.env
 $ cp docker/dev/.env.example docker/dev/.env
 ```
@@ -19,6 +19,10 @@ $ cp docker/dev/.env.example docker/dev/.env
 ```
 $ docker compose up -d
 ```
+
+**POD の導入**  
+cd ArMapSnsNative/ios  
+`pod install`
 
 **開発サーバー起動**  
 _native 側_  

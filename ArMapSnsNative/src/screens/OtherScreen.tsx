@@ -4,6 +4,7 @@ import {OtherScreenNavigationProp} from '../utils/ParamList';
 type Props = {
   navigation: OtherScreenNavigationProp;
 };
+
 const OtherScreen = ({navigation}: Props) => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
