@@ -9,7 +9,7 @@ type Props = {
 const MapScreen = ({navigation}: Props) => {
   return (
     <View style={{flex: 1}}>
-      <MapView style={{flex: 1}} />
+      <MapView zoomEnabled={false} style={{flex: 1}} />
     </View>
   );
 };

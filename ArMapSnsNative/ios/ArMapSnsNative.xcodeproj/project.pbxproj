@@ -52,6 +52,7 @@
 		F59E10762B494B1400412E82 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 		F5BB2D462B49B08000A3B6DB /* RNTMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapManager.h; sourceTree = "<group>"; };
 		F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
+		F5BB2D4B2B49C68F00A3B6DB /* RCTConvert+Mapkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+Mapkit.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */,
+				F5BB2D4B2B49C68F00A3B6DB /* RCTConvert+Mapkit.h */,
 				F5BB2D462B49B08000A3B6DB /* RNTMapManager.h */,
 			);
 			path = MapManager;
