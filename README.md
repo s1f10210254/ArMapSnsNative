@@ -28,15 +28,24 @@ $ pod install
 ```
 
 **開発サーバー起動**  
-_native 側_  
-cd ArMapSnsNative  
-`npm start`
+_native 側_
 
-シミレーターが起動していない状態 ↓  
-`npm run ios`
-or  
-`xcode から起動`
+```
+$ cd ArMapSnsNative
+$ npm start
+```
 
-_server 側_  
-cd server  
-`npm run dev`
+シミレーターが起動していない場合 ↓
+
+```
+$ npm run ios
+or
+$ xcode から起動
+```
+
+_server 側_
+
+```
+$ cd server
+$ npm run dev
+```
