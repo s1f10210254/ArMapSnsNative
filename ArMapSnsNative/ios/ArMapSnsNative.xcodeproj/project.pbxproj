@@ -16,6 +16,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F59E10772B494B1400412E82 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E10762B494B1400412E82 /* RCTCalendarModule.m */; };
 		F59E10782B494B1400412E82 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E10762B494B1400412E82 /* RCTCalendarModule.m */; };
+		F5BB2D482B49B18C00A3B6DB /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */; };
+		F5BB2D492B49B18C00A3B6DB /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F59E10752B494A8800412E82 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		F59E10762B494B1400412E82 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
+		F5BB2D462B49B08000A3B6DB /* RNTMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapManager.h; sourceTree = "<group>"; };
+		F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		F59E10732B49489400412E82 /* NativeModule */ = {
 			isa = PBXGroup;
 			children = (
+				F5BB2D432B49AAB500A3B6DB /* MapManager */,
 				F59E10742B494A2600412E82 /* example_Calendar */,
 			);
 			path = NativeModule;
@@ -168,6 +173,15 @@
 				F59E10762B494B1400412E82 /* RCTCalendarModule.m */,
 			);
 			path = example_Calendar;
+			sourceTree = "<group>";
+		};
+		F5BB2D432B49AAB500A3B6DB /* MapManager */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB2D472B49B18C00A3B6DB /* RNTMapManager.m */,
+				F5BB2D462B49B08000A3B6DB /* RNTMapManager.h */,
+			);
+			path = MapManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ArMapSnsNativeTests.m in Sources */,
+				F5BB2D492B49B18C00A3B6DB /* RNTMapManager.m in Sources */,
 				F59E10782B494B1400412E82 /* RCTCalendarModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +435,7 @@
 				F59E10772B494B1400412E82 /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				F5BB2D482B49B18C00A3B6DB /* RNTMapManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,10 @@ const HomeScreen = ({navigation}: Props) => {
         title="NativeModule"
         onPress={() => navigation.navigate('NativeModule')}
       />
+      <Button
+        title="Got to Map Screen"
+        onPress={() => navigation.navigate('Map')}
+      />
     </View>
   );
 };

@@ -5,6 +5,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import OtherScreen from './src/screens/OtherScreen';
 import UserScreen from './src/screens/UserScreen';
 import NativeModuleScreen from './src/screens/NativeModuleScreen';
+import MapScreen from './src/screens/MapScreen';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Stack.Screen name="Other" component={OtherScreen} />
         <Stack.Screen name="User" component={UserScreen} />
         <Stack.Screen name="NativeModule" component={NativeModuleScreen} />
+        <Stack.Screen name="Map" component={MapScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

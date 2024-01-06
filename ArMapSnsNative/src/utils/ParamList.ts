@@ -32,3 +32,8 @@ export type NativeModuleScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
   'NativeModule'
 >;
+
+export type MapScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'Map'
+>;

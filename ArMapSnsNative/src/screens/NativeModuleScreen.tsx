@@ -1,4 +1,10 @@
-import {Button, NativeEventEmitter, NativeModules, View} from 'react-native';
+import {
+  Button,
+  NativeEventEmitter,
+  NativeModules,
+  View,
+  requireNativeComponent,
+} from 'react-native';
 import {NativeModuleScreenNavigationProp} from '../utils/ParamList';
 import {useEffect} from 'react';
 
