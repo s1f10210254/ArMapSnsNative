@@ -3,11 +3,11 @@
 **npm モジュールのインストール**
 
 ```
-$cd ArMapSnsNative
-$npm i
+$ cd ArMapSnsNative
+$ npm i
 
-$cd server
-$npm i
+$ cd server
+$ npm i
 ```
 
 **環境変数ファイルの作成**
