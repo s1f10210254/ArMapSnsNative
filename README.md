@@ -20,9 +20,12 @@ $ cp docker/dev/.env.example docker/dev/.env
 $ docker compose up -d
 ```
 
-**POD の導入**  
-cd ArMapSnsNative/ios  
-`pod install`
+**POD の導入**
+
+```
+$ cd ArMapSnsNative/ios
+$ pod install
+```
 
 **開発サーバー起動**  
 _native 側_  
